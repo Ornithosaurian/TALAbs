@@ -1,34 +1,33 @@
-def subsetUtil(arr, n, k, index, data, i):
+def subsetUtil(array, n, k, index, subset, i):
     if (index == k):
         for j in range(k):
-            print(data[j], end=" ")
+            print(subset[j], end=" ")
         print(" ")
         return
 
     if (i >= n):
         return
 
-    data[index] = arr[i]
-    subsetUtil(arr, n, k, index + 1, data, i + 1)
+    subset[index] = array[i]
+    subsetUtil(array, n, k, index + 1, subset, i + 1)
 
-    subsetUtil(arr, n, k, index, data, i + 1)
+    subsetUtil(array, n, k, index, subset, i + 1)
 
 
 def subset(n, k):
 
-    arr = [10, 20, 30, 40, 50]
-    data = list(range(k))
+    subset = list(range(k))
 
     if(n < 1 or k < 1 or k == n):
         print("Тут трабл")
         return
 
-    arr = list()
+    array = list()
     for i in range(1, n + 1):
-        arr.append(i)
+        array.append(i)
 
-    subsetUtil(arr, n, k,
-                    0, data, 0)
+    subsetUtil(array, n, k,
+                    0, subset, 0)
 
 print("1")
 k = 5
