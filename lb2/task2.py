@@ -3,6 +3,8 @@ sys.setrecursionlimit(100000)
     
      
 def ackermann_function(m, n,memo):
+    if m < 0 or n < 0:
+        return "Від'ємне число"
     if not (m, n) in memo:
         if m == 0:
             res = n + 1
