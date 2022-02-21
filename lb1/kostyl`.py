@@ -30,7 +30,7 @@ def subset(n, k):
 
 print("1")
 k = 5
-n = 7
+n = 50
 subset(n, k)
 print("2")
 k = - 8
