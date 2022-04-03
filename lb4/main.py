@@ -4,6 +4,31 @@ from SelectionSort import selection_sort
 
 import numpy as np
 
+bubble_sort(copy.copy(rand_1k))
+bubble_sort(copy.copy(rand_10k))
+bubble_sort(copy.copy(rand_100k))
+
+bubble_sort(copy.copy(arr_1k))
+bubble_sort(copy.copy(arr_10k))
+bubble_sort(copy.copy(arr_100k))
+
+insertion_sort(copy.copy(rand_1k))
+insertion_sort(copy.copy(rand_10k))
+insertion_sort(copy.copy(rand_100k))
+
+insertion_sort(copy.copy(arr_1k))
+insertion_sort(copy.copy(arr_10k))
+insertion_sort(copy.copy(arr_100k))
+
+selection_sort(copy.copy(rand_1k))
+selection_sort(copy.copy(rand_10k))
+selection_sort(copy.copy(rand_100k))
+
+selection_sort(copy.copy(arr_1k))
+selection_sort(copy.copy(arr_10k))
+selection_sort(copy.copy(arr_100k))
+
+
 arr = []
 
 def make_random_arr(n):
