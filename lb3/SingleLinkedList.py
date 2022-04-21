@@ -99,3 +99,60 @@ class SingleLinkedList:
             current_id = current_id + 1
         
         return
+    def add_first_list_item(self, item):
+
+        item = ListNode(item)
+
+        if self.head is None:
+            self.head = item
+
+            return
+
+        item.next = self.head
+        self.head = item
+
+        return
+
+    def add_middle_list_item(self, item, position):
+
+        item = ListNode(item)
+
+        if position < 1:
+            print("Can't be less than 1")
+
+        elif position == 1:
+            item.next = self.head
+            self.head = item
+
+        else:
+            current_node = self.head
+
+            for i in range(1, position - 1):
+
+                if current_node is not None:
+                    current_node = current_node.next
+
+            if current_node is not None:
+                item.next = current_node.next
+                current_node.next = item
+
+            else:
+                print("Previos node is null")
+
+
+    def serch_list_item_index(self, data):
+
+        current_item=self.head
+        count_index=0
+
+        while current_item is not None:
+            count_index+=1
+
+            if current_item.data==data:
+                return count_index
+
+            current_item=current_item.next
+
+
+
+
