@@ -1,5 +1,6 @@
 from ListNode import ListNode
 
+
 class DoubleLinkedList:
     def __init__(self):
 
@@ -9,15 +10,14 @@ class DoubleLinkedList:
         return
 
     def list_length(self):
-        
+
         count = 0
         current_node = self.head
 
         while current_node is not None:
-
             count = count + 1
             current_node = current_node.next
-        
+
         return count
 
     def output_list(self):
@@ -27,9 +27,8 @@ class DoubleLinkedList:
         while current_node is not None:
             print(current_node.data)
             current_node = current_node.next
-        
-        return
 
+        return
 
     def add_list_item(self, item):
 
@@ -43,11 +42,11 @@ class DoubleLinkedList:
                 self.tail.next = item
                 item.previous = self.tail
                 self.tail = item
-        
+
         return
 
     def remove_first_list_item(self):
-        
+
         current_node = self.head
 
         while current_node is not None:
@@ -55,20 +54,20 @@ class DoubleLinkedList:
             next_node = current_node.next
 
             if previous_node is not None:
-                    previous_node.next = next_node
-                    if next_node is not None:
-                        next_node.previous = previous_node
+                previous_node.next = next_node
+                if next_node is not None:
+                    next_node.previous = previous_node
             else:
                 self.head = next_node
                 if next_node is not None:
-                      next_node.previous = None
-  
+                    next_node.previous = None
+
             return
-                
+
         return
-    
+
     def remove_middle_list_item(self):
-        
+
         current_id = 1
         current_node = self.head
 
@@ -76,7 +75,7 @@ class DoubleLinkedList:
             previous_node = current_node.previous
             next_node = current_node.next
 
-            if current_id == int(self.list_length()/2):
+            if current_id == int(self.list_length() / 2):
 
                 if previous_node is not None:
                     previous_node.next = next_node
@@ -88,14 +87,14 @@ class DoubleLinkedList:
                         next_node.previous = None
 
                 return
- 
+
             current_node = next_node
             current_id = current_id + 1
-                
+
         return
 
     def remove_last_list_item(self):
-        
+
         current_id = 1
         current_node = self.head
 
@@ -115,13 +114,13 @@ class DoubleLinkedList:
                         next_node.previous = None
 
                 return
- 
+
             current_node = next_node
             current_id = current_id + 1
-                
+
         return
-    
-        def add_first_list_item(self, item):
+
+    def add_first_list_item(self, item):
 
         item = ListNode(item)
 
