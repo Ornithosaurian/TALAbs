@@ -123,16 +123,16 @@ class DoubleLinkedList:
     
         def add_first_list_item(self, item):
 
-        item = ListNode(item)
+            item = ListNode(item)
 
-        if self.head is None:
-            self.head = item
+            if self.head is None:
+                self.head = item
 
             return
 
-        self.head.previous = item
-        item.next = self.head
-        self.head = item
+            self.head.previous = item
+            item.next = self.head
+            self.head = item
 
         return
 
