@@ -31,17 +31,31 @@ class DoubleLinkedList:
         return
 
     def add_list_item(self, item):
+        item=ListNode(item)
+        current_node=self.head
+        item.next=None
+        if self.head is None:
+            item.previous=None
+            self.head=item
+            return
+        while (current_node.next is not None):
+            current_node=current_node.next
 
-        if isinstance(item, ListNode):
-            if self.head is None:
-                self.head = item
-                item.previous = None
-                item.next = None
-                self.tail = item
-            else:
-                self.tail.next = item
-                item.previous = self.tail
-                self.tail = item
+        current_node.next=item
+        item.previous=current_node
+
+    def add_first_list_item(self, item):
+
+        item = ListNode(item)
+
+        if self.head is None:
+            self.head = item
+
+            return
+
+        self.head.previous = item
+        item.next = self.head
+        self.head = item
 
         return
 
@@ -120,21 +134,6 @@ class DoubleLinkedList:
 
         return
 
-    def add_first_list_item(self, item):
-
-        item = ListNode(item)
-
-        if self.head is None:
-            self.head = item
-
-            return
-
-        self.head.previous = item
-        item.next = self.head
-        self.head = item
-
-        return
-
     def add_middle_list_item(self, item, position):
 
         item = ListNode(item)
@@ -164,7 +163,7 @@ class DoubleLinkedList:
                 print("Previos node is null")
 
 
-    def serch_list_item_index(self, data):
+    def search_list_item_index(self, data):
 
         current_item = self.head
         count_index = 0
@@ -177,3 +176,18 @@ class DoubleLinkedList:
 
             current_item = current_item.next
 
+    def get_first(self):
+        current_node = self.head
+
+        while current_node.previous is not None:
+            current_node = current_node.previous
+
+        return current_node.data
+
+
+    def get_last(self):
+        current_node = self.head
+        while current_node.next is not None:
+            current_node = current_node.next
+
+        return current_node.data
