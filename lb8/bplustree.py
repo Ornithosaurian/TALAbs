@@ -1,6 +1,5 @@
 import math
 
-
 class Node:
     def __init__(self, order):
         self.order = order

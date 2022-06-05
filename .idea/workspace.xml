@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="99b208b6-7d48-4cda-b4fa-dbfdd9790d45" name="Changes" comment="Змінив назву БТС на БСТ(ми не к-поп команда)&#10;Метод видалення БСТ(нестандартний)&#10;Оновлення мейн.пу(перевірка роботи методу)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lb8/Person.py" beforeDir="false" afterPath="$PROJECT_DIR$/lb8/Person.py" afterDir="false" />
-    </list>
+    <list default="true" id="99b208b6-7d48-4cda-b4fa-dbfdd9790d45" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -226,14 +223,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="Змінив назву БТС на БСТ(ми не к-поп команда)&#10;Метод видалення БСТ(нестандартний)&#10;Оновлення мейн.пу(перевірка роботи методу)" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/TALabs$main.coverage" NAME="main Coverage Results" MODIFIED="1645416519496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TALabs$kostyl_.coverage" NAME="kostyl` Coverage Results" MODIFIED="1644782041823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lb1" />
-    <SUITE FILE_PATH="coverage/TALabs$task1.coverage" NAME="task1 Coverage Results" MODIFIED="1645416737324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lb2" />
-    <SUITE FILE_PATH="coverage/TALabs$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1644775877482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/TALabs$Main.coverage" NAME="Main Coverage Results" MODIFIED="1644775943498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lb1" />
-    <SUITE FILE_PATH="coverage/main_py$main__3_.coverage" NAME="main (3) Coverage Results" MODIFIED="1653400337516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/123/Лб4" />
-    <SUITE FILE_PATH="coverage/main_py$BST.coverage" NAME="BST Coverage Results" MODIFIED="1651964092183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lb6" />
     <SUITE FILE_PATH="coverage/main_py$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1651970242425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lb6" />
+    <SUITE FILE_PATH="coverage/TALabs$main.coverage" NAME="main Coverage Results" MODIFIED="1645416519496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TALabs$Main.coverage" NAME="Main Coverage Results" MODIFIED="1644775943498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lb1" />
+    <SUITE FILE_PATH="coverage/TALabs$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1644775877482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/TALabs$kostyl_.coverage" NAME="kostyl` Coverage Results" MODIFIED="1644782041823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lb1" />
     <SUITE FILE_PATH="coverage/main_py$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1651926879239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lb5" />
+    <SUITE FILE_PATH="coverage/main_py$BST.coverage" NAME="BST Coverage Results" MODIFIED="1651964092183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lb6" />
+    <SUITE FILE_PATH="coverage/main_py$main__3_.coverage" NAME="main (3) Coverage Results" MODIFIED="1653400337516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/123/Лб4" />
+    <SUITE FILE_PATH="coverage/TALabs$task1.coverage" NAME="task1 Coverage Results" MODIFIED="1645416737324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lb2" />
   </component>
 </project>
