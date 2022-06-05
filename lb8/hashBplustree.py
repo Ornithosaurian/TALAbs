@@ -1,5 +1,6 @@
 import math
 
+
 class Node:
     def __init__(self, order):
         self.order = order
@@ -8,7 +9,6 @@ class Node:
         self.nextKey = None
         self.parent = None
         self.check_leaf = False
-
 
     def insert_at_leaf(self, leaf, value, key):
         if (self.values):
@@ -30,12 +30,10 @@ class Node:
             self.keys = [[key]]
 
 
-
 class BplusTree:
     def __init__(self, order):
         self.root = Node(order)
         self.root.check_leaf = True
-
 
     def insert(self, value, key):
         value = str(value)
@@ -55,10 +53,9 @@ class BplusTree:
             old_node.nextKey = node1
             self.insert_in_parent(old_node, node1.values[0], node1)
 
-
     def search(self, value):
         current_node = self.root
-        while(current_node.check_leaf == False):
+        while (current_node.check_leaf == False):
             temp2 = current_node.values
             for i in range(len(temp2)):
                 if (value == temp2[i]):
@@ -72,7 +69,6 @@ class BplusTree:
                     break
         return current_node
 
-
     def find(self, value, key):
         l = self.search(value)
         for i, item in enumerate(l.values):
@@ -82,7 +78,6 @@ class BplusTree:
                 else:
                     return False
         return False
-
 
     def insert_in_parent(self, n, value, ndash):
         if (self.root == n):
@@ -99,9 +94,9 @@ class BplusTree:
         for i in range(len(temp3)):
             if (temp3[i] == n):
                 parentNode.values = parentNode.values[:i] + \
-                    [value] + parentNode.values[i:]
+                                    [value] + parentNode.values[i:]
                 parentNode.keys = parentNode.keys[:i +
-                                                  1] + [ndash] + parentNode.keys[i + 1:]
+                                                   1] + [ndash] + parentNode.keys[i + 1:]
                 if (len(parentNode.keys) > parentNode.order):
                     parentdash = Node(parentNode.order)
                     parentdash.parent = parentNode.parent
@@ -119,7 +114,6 @@ class BplusTree:
                     for j in parentdash.keys:
                         j.parent = parentdash
                     self.insert_in_parent(parentNode, value_, parentdash)
-
 
     def delete(self, value, key):
         node_ = self.search(value)
@@ -147,7 +141,6 @@ class BplusTree:
             print("Value not in Tree")
             return
 
-
     def deleteEntry(self, node_, value, key):
 
         if not node_.check_leaf:
@@ -165,7 +158,8 @@ class BplusTree:
             node_.keys[0].parent = None
             del node_
             return
-        elif (len(node_.keys) < int(math.ceil(node_.order / 2)) and node_.check_leaf == False) or (len(node_.values) < int(math.ceil((node_.order - 1) / 2)) and node_.check_leaf == True):
+        elif (len(node_.keys) < int(math.ceil(node_.order / 2)) and node_.check_leaf == False) or (
+                len(node_.values) < int(math.ceil((node_.order - 1) / 2)) and node_.check_leaf == True):
 
             is_predecessor = 0
             parentNode = node_.parent
@@ -293,7 +287,6 @@ def printTree(tree):
                 lev_leaf = lev
                 leaf = x
                 flag = 1
-
 
 # record_len = 3
 # bplustree = BplusTree(record_len)
