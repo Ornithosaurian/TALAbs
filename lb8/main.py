@@ -1,21 +1,24 @@
-import Person as p
-import string
-from tree import BinarySearchTree as tree
+import Person as Person
+
+from tree import BinarySearchTree as Tree
 
 # print(ord('a') - 97)
 # print(ord('z') - 97)
 
-objs = [tree() for i in range(26)]
+objects = [Tree() for i in range(26)]
 
-def add(obj):
-    objs[obj.flet].put(hash(obj),obj)
 
-def get(obj):
-    return objs[obj.flet].get(hash(obj))
+def add(object):
+    objects[object.flet].put(hash(object), object)
 
-p1 = p.Person("Vasys", "bubybc", 1)  # Dudybc
+
+def search(object):
+    return objects[object.flet].get(hash(object))
+
+
+p1 = Person.Person("name", "cgviv", 21)  # Dudybc
 
 add(p1)
-print(get(p1).flet)
+print(search(p1).flet)
 
-# print(hash(p1))
+print(hash(p1))

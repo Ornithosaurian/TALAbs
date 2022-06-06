@@ -3,7 +3,7 @@ class Person():
     city: str
     zip: int
 
-    def __init__(self, name, city, zip):
+    def __init__(self, name: object, city: object, zip: object) -> object:
         self.name = name
         self.city = city
         self.zip = zip
@@ -21,5 +21,3 @@ class Person():
             sum = 143 * sum + ord(b) - self.zip * 14
 
         return sum
-
-
