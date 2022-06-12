@@ -8,25 +8,25 @@ V = [4,5,2]
 def Resource(item):
 	return np.lexsort([-1*item[:,1], item[:,0]])
 
-def Knapsack(item, V, index):
+def VirtualMachine(item, V, index):
 	number = len(item)
 	status = [0] * number
 	for i in range(number):
 		for j in range(len(V)):
 			if item[index[i],1] == V[j]:
-				status[index[i]] = 1
+				status[index[i]] = item[index[i],0]
 				V.remove(V[j])
 				break
 	if len(V) != 0:
 		for i in range(number):
 			for j in range(len(V)):
 				if status[i] == 0 and item[index[i],1] > V[j]:
-					status[index[i]] = 1
+					status[index[i]] = item[index[i],0]
 					V.remove(V[j])
 					break
 	return status
 
 print(item)
 index_resource = Resource(item)
-results_resource = Knapsack(item, V, index_resource)
+results_resource = VirtualMachine(item, V, index_resource)
 print(results_resource)
