@@ -14,6 +14,15 @@ def solver(x, y, f):
         elif x > y:
             f = (1 + x) * y
         print(f)
-
+    return f
 
 solver(x, y, f)
+
+
+def toBinary(f):
+    binary = '{0:b}'.format(f)
+    print(binary)
+
+
+toBinary(solver(x,y,f))
+
